@@ -7,36 +7,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-//@Configuration
-//@EnableWebSecurity
-//public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-
-	/*
-	 * (非 Javadoc)
-	 * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)
-	 */
-//	@Autowired
-//	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-//		auth.inMemoryAuthentication().withUser("user").password("password").roles("anonymous");
-//	}
-//	protected void configure(AuthenticationManagerBuilder authMgrBuilder) throws Exception {
-//		authMgrBuilder.inMemoryAuthentication().withUser("user").password("password").roles("USER");
-//	}
-
-	/*
-	 * (非 Javadoc)
-	 * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.web.builders.HttpSecurity)
-	 */
-//	@Override
-//	protected void configure(HttpSecurity http) throws Exception {
-//		http.authorizeRequests().antMatchers("/login*").permitAll()
-//				.anyRequest().authenticated();
-//		http.authorizeRequests().anyRequest().authenticated();anonymous
-
-//		http.formLogin().loginPage("/login").defaultSuccessUrl("/top");
-//	}
-//}
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
