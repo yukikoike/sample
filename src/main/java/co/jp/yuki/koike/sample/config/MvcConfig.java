@@ -15,7 +15,7 @@ public class MvcConfig implements WebMvcConfigurer {
 	 * @see org.springframework.web.servlet.config.annotation.WebMvcConfigurer#addViewControllers(org.springframework.web.servlet.config.annotation.ViewControllerRegistry)
 	 */
     @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/login").setViewName("login");
+    public void addViewControllers(ViewControllerRegistry viewControllerRegistry) {
+    	viewControllerRegistry.addViewController("/loginFormController").setViewName("loginForm");
     }
 }

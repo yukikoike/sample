@@ -10,5 +10,11 @@ import co.jp.yuki.koike.sample.domain.model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
 
-	User findOne(String username);
+    /**
+     * ユーザー情報を取得する
+     *
+     * @param username ユーザーID
+     * @return ユーザーエンティティ
+     */
+    User findOne(String username);
 }
