@@ -4,18 +4,18 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * LoginFormコントローラー
+ * ログイン画面コントローラー
  */
 @Controller
 public class LoginFormController {
 
-	/**
-	 * ログイン画面のView名を返す
-	 *
-	 * @return ログイン画面のView名
-	 */
-	@RequestMapping("/loginForm")
-	String loginForm() {
-		return "loginForm";
-	}
+    /**
+     * ログイン画面のView名を返す
+     *
+     * @return ログイン画面のView名
+     */
+    @RequestMapping("/loginForm")
+    String loginForm() {
+        return "loginForm";
+    }
 }

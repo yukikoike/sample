@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:oracle
+    username: YUKI_KOIKE
+    password: 0000
+    driverClassName: oracle.jdbc.driver.OracleDriver
