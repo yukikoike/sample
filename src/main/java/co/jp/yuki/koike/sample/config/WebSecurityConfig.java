@@ -18,46 +18,46 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	/**
-	 * UserDetailsService
-	 */
-	@Autowired
-	UserDetailsService userDetailsService;
+    /**
+     * UserDetailsService
+     */
+    @Autowired
+    UserDetailsService userDetailsService;
 
 
-	/**
-	 * BCryptPasswordEncoderオブジェクトを返す
-	 */
-	@Bean
-	PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+    /**
+     * BCryptPasswordEncoderオブジェクトを返す
+     */
+    @Bean
+    PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
-	/*
-	 * (非 Javadoc)
-	 * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.web.builders.HttpSecurity)
-	 */
-	@Override
-	protected void configure(HttpSecurity httpSecurity) throws Exception {
-		httpSecurity.authorizeRequests()
-				.antMatchers("/js/**", "/css/**").permitAll()
-				.antMatchers("/**").authenticated()
-				.and()
-				.formLogin()
-				.loginPage("/loginForm")
-				.loginProcessingUrl("/login")
-				.usernameParameter("username")
-				.passwordParameter("password")
-				.defaultSuccessUrl("/gettingLocationInformation", true)
-				.failureUrl("/loginForm?error=true").permitAll();
-	}
+    /*
+     * (非 Javadoc)
+     * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.web.builders.HttpSecurity)
+     */
+    @Override
+    protected void configure(HttpSecurity httpSecurity) throws Exception {
+        httpSecurity.authorizeRequests()
+                .antMatchers("/js/**", "/css/**").permitAll()
+                .antMatchers("/**").authenticated()
+                .and()
+                .formLogin()
+                .loginPage("/loginForm")
+                .loginProcessingUrl("/login")
+                .usernameParameter("username")
+                .passwordParameter("password")
+                .defaultSuccessUrl("/gettingLocation", true)
+                .failureUrl("/loginForm?error=true").permitAll();
+    }
 
-	/*
-	 * (非 Javadoc)
-	 * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)
-	 */
-	@Override
-	protected void configure(AuthenticationManagerBuilder authenticationManageruilder) throws Exception {
-		authenticationManageruilder.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
-	}
+    /*
+     * (非 Javadoc)
+     * @see org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter#configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)
+     */
+    @Override
+    protected void configure(AuthenticationManagerBuilder authenticationManageruilder) throws Exception {
+        authenticationManageruilder.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+    }
 }
