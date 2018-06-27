@@ -24,7 +24,8 @@ public class LoginFormController {
      */
     @RequestMapping("/loginForm")
     String loginForm() {
-        
+        logger.info("enter loginForm");
+        logger.info("exit loginForm");
         return "loginForm";
     }
 }
