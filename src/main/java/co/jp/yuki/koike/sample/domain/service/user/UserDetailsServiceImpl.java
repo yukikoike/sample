@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import co.jp.yuki.koike.sample.domain.model.User;
 import co.jp.yuki.koike.sample.domain.repository.user.UserRepository;
@@ -15,6 +16,7 @@ import co.jp.yuki.koike.sample.domain.repository.user.UserRepository;
 /**
  * UserDetails実装クラス
  */
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     /**
@@ -29,6 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
     UserRepository userRepository;
 
+
     /*
      * (非 Javadoc)
      * @see org.springframework.security.core.userdetails.UserDetailsService#loadUserByUsername(java.lang.String)
@@ -37,9 +40,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username)
             throws UsernameNotFoundException {
         logger.info("enter loadUserByUsername.");
-        User user = Optional.ofNullable(userRepository.findOne(username))
+
+        final User user = Optional.ofNullable(userRepository.getOne(username))
                 .orElseThrow(() -> new UsernameNotFoundException(username + " is not found."));
         logger.debug("userId = " + user.getUserId() + "%n" + "password = " + user.getPassword() + ".");
+
         logger.info("exit loadUserByUsername.");
         return new UserDetailsImpl(user);
     }

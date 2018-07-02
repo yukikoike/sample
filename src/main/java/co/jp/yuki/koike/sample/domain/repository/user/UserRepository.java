@@ -16,5 +16,5 @@ public interface UserRepository extends JpaRepository<User, String> {
      * @param username ユーザーID
      * @return ユーザーエンティティ
      */
-    User findOne(String username);
+//    User findOne(String username);
 }

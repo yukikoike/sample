@@ -1,20 +1,19 @@
 package co.jp.yuki.koike.sample.domain.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.stereotype.Component;
-
 /**
  * ユーザーエンティティクラス
  */
 @Entity
-@Table(name =  "USER_MST")
-@Component
-public class User {
+@Table(name = "USER_MST")
+public class User implements Serializable {
 
     /**
      * ユーザーID

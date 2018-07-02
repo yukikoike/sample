@@ -27,12 +27,13 @@ public class GettingLocationController {
      */
     @RequestMapping("/gettingLocation")
     String gettingLocation() {
-        logger.info("enter ettingLocation.");
+        logger.info("enter gettingLocation.");
 
-        UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.newInstance();
+        final UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.newInstance();
 
-        URI uri = uriComponentsBuilder.scheme("https").host("localhost:8080").path("/gettingLocation")
-                .build().toUri();
+        final URI uri = uriComponentsBuilder.scheme("https").host("localhost:8080").path("/gettingLocation").build()
+                .toUri();
+        logger.debug(uri.toString());
 
         logger.info("exit gettingLocation.");
         return "redirect: " + uri.toString();
