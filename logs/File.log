@@ -1,97 +1,25 @@
-2018-06-30 00:06:23.097[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] Starting SampleApplication on DESKTOP-BD2CRPU with PID 10696 (C:\Users\nec\git\sample\target\classes started by nec in C:\Users\nec\git\sample)
-2018-06-30 00:06:23.284[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] No active profile set, falling back to default profiles: default
-2018-06-30 00:06:23.966[main][INFO ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49139829: startup date [Sat Jun 30 00:06:23 JST 2018]; root of context hierarchy
-2018-06-30 00:06:39.805[main][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
-2018-06-30 00:06:39.886[main][INFO ][org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-2018-06-30 00:06:39.937[main][INFO ][org.apache.catalina.core.StandardService] Starting service [Tomcat]
-2018-06-30 00:06:39.938[main][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.29
-2018-06-30 00:06:39.985[localhost-startStop-1][INFO ][org.apache.catalina.core.AprLifecycleListener] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin/server;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/lib/amd64;C:\app\nec\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Nodist\bin;C:\Users\nec\AppData\Local\Microsoft\WindowsApps;;C:\Users\nec\AppData\Local\Programs\Fiddler;C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse;;.]
-2018-06-30 00:06:41.066[localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-2018-06-30 00:06:41.068[localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 17103 ms
-2018-06-30 00:06:41.599[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-06-30 00:06:41.600[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-06-30 00:06:41.600[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-06-30 00:06:41.600[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
-2018-06-30 00:06:41.602[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean] Mapping filter: 'springSecurityFilterChain' to: [/*]
-2018-06-30 00:06:41.602[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
-2018-06-30 00:06:42.289[main][WARN ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2018-06-30 00:06:42.333[main][INFO ][org.apache.catalina.core.StandardService] Stopping service [Tomcat]
-2018-06-30 00:06:42.572[main][INFO ][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
+2018-07-05 23:23:15.994[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] Starting SampleApplication on DESKTOP-BD2CRPU with PID 20496 (C:\Users\nec\git\sample\target\classes started by nec in C:\Users\nec\git\sample)
+2018-07-05 23:23:16.086[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] No active profile set, falling back to default profiles: default
+2018-07-05 23:23:16.291[main][INFO ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49139829: startup date [Thu Jul 05 23:23:16 JST 2018]; root of context hierarchy
+2018-07-05 23:23:19.325[main][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
+2018-07-05 23:23:19.367[main][INFO ][org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-05 23:23:19.383[main][INFO ][org.apache.catalina.core.StandardService] Starting service [Tomcat]
+2018-07-05 23:23:19.384[main][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-07-05 23:23:19.397[localhost-startStop-1][INFO ][org.apache.catalina.core.AprLifecycleListener] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin/server;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/lib/amd64;C:\app\nec\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Nodist\bin;C:\Users\nec\AppData\Local\Microsoft\WindowsApps;;C:\Users\nec\AppData\Local\Programs\Fiddler;C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse;;.]
+2018-07-05 23:23:19.603[localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+2018-07-05 23:23:19.603[localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 3313 ms
+2018-07-05 23:23:20.033[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-05 23:23:20.034[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-05 23:23:20.034[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-05 23:23:20.035[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-05 23:23:20.036[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean] Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-05 23:23:20.036[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
+2018-07-05 23:23:20.602[main][WARN ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2018-07-05 23:23:20.616[main][INFO ][org.apache.catalina.core.StandardService] Stopping service [Tomcat]
+2018-07-05 23:23:20.905[main][INFO ][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-06-30 00:06:43.749[main][ERROR][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field userRepository in co.jp.yuki.koike.sample.domain.service.user.UserDetailsServiceImpl required a bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' in your configuration.
-
-2018-06-30 00:12:11.197[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] Starting SampleApplication on DESKTOP-BD2CRPU with PID 12328 (C:\Users\nec\git\sample\target\classes started by nec in C:\Users\nec\git\sample)
-2018-06-30 00:12:11.216[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] No active profile set, falling back to default profiles: default
-2018-06-30 00:12:11.344[main][INFO ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49139829: startup date [Sat Jun 30 00:12:11 JST 2018]; root of context hierarchy
-2018-06-30 00:12:19.806[main][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
-2018-06-30 00:12:19.857[main][INFO ][org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-2018-06-30 00:12:19.930[main][INFO ][org.apache.catalina.core.StandardService] Starting service [Tomcat]
-2018-06-30 00:12:19.931[main][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.29
-2018-06-30 00:12:19.981[localhost-startStop-1][INFO ][org.apache.catalina.core.AprLifecycleListener] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin/server;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/lib/amd64;C:\app\nec\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Nodist\bin;C:\Users\nec\AppData\Local\Microsoft\WindowsApps;;C:\Users\nec\AppData\Local\Programs\Fiddler;C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse;;.]
-2018-06-30 00:12:20.962[localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-2018-06-30 00:12:20.962[localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 9618 ms
-2018-06-30 00:12:21.300[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-06-30 00:12:21.301[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-06-30 00:12:21.301[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-06-30 00:12:21.301[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
-2018-06-30 00:12:21.302[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean] Mapping filter: 'springSecurityFilterChain' to: [/*]
-2018-06-30 00:12:21.302[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
-2018-06-30 00:12:21.825[main][WARN ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2018-06-30 00:12:21.841[main][INFO ][org.apache.catalina.core.StandardService] Stopping service [Tomcat]
-2018-06-30 00:12:22.434[main][INFO ][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-06-30 00:12:22.637[main][ERROR][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Field userRepository in co.jp.yuki.koike.sample.domain.service.user.UserDetailsServiceImpl required a bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' in your configuration.
-
-2018-06-30 00:15:07.459[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] Starting SampleApplication on DESKTOP-BD2CRPU with PID 14768 (C:\Users\nec\git\sample\target\classes started by nec in C:\Users\nec\git\sample)
-2018-06-30 00:15:07.465[main][INFO ][co.jp.yuki.koike.sample.SampleApplication] No active profile set, falling back to default profiles: default
-2018-06-30 00:15:07.649[main][INFO ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6adbc9d: startup date [Sat Jun 30 00:15:07 JST 2018]; root of context hierarchy
-2018-06-30 00:15:16.004[main][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port(s): 8080 (http)
-2018-06-30 00:15:16.026[main][INFO ][org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-2018-06-30 00:15:16.047[main][INFO ][org.apache.catalina.core.StandardService] Starting service [Tomcat]
-2018-06-30 00:15:16.048[main][INFO ][org.apache.catalina.core.StandardEngine] Starting Servlet Engine: Apache Tomcat/8.5.29
-2018-06-30 00:15:16.057[localhost-startStop-1][INFO ][org.apache.catalina.core.AprLifecycleListener] The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin/server;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/bin;C:/pleiades-4.7.1-ultimate-win-64bit-jre_20171019/pleiades/eclipse/jre/bin/../jre/lib/amd64;C:\app\nec\product\12.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Nodist\bin;C:\Users\nec\AppData\Local\Microsoft\WindowsApps;;C:\Users\nec\AppData\Local\Programs\Fiddler;C:\pleiades-4.7.1-ultimate-win-64bit-jre_20171019\pleiades\eclipse;;.]
-2018-06-30 00:15:16.277[localhost-startStop-1][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-2018-06-30 00:15:16.277[localhost-startStop-1][INFO ][org.springframework.web.context.ContextLoader] Root WebApplicationContext: initialization completed in 8628 ms
-2018-06-30 00:15:16.673[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-06-30 00:15:16.674[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-06-30 00:15:16.674[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-06-30 00:15:16.674[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.FilterRegistrationBean] Mapping filter: 'requestContextFilter' to: [/*]
-2018-06-30 00:15:16.675[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean] Mapping filter: 'springSecurityFilterChain' to: [/*]
-2018-06-30 00:15:16.675[localhost-startStop-1][INFO ][org.springframework.boot.web.servlet.ServletRegistrationBean] Servlet dispatcherServlet mapped to [/]
-2018-06-30 00:15:17.351[main][WARN ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'co.jp.yuki.koike.sample.domain.repository.user.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2018-06-30 00:15:17.356[main][INFO ][org.apache.catalina.core.StandardService] Stopping service [Tomcat]
-2018-06-30 00:15:17.396[main][INFO ][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2018-06-30 00:15:17.603[main][ERROR][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+2018-07-05 23:23:21.115[main][ERROR][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
 
 ***************************
 APPLICATION FAILED TO START

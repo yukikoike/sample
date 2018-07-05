@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import co.jp.yuki.koike.sample.domain.model.User;
 
 /**
- * ユーザーRepositoryクラス
+ * ユーザーRepositoryインタフェース
  */
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
